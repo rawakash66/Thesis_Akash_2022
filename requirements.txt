@@ -1,0 +1,8 @@
+numpy
+matplotlib
+scipy
+tensorflow-gpu
+albumentations
+segmentation-models
+vtk
+plyfile
