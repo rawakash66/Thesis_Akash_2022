@@ -20,3 +20,7 @@ This repository includes the code scripts implemnted in the thesis titled ''Comp
 5. matplotlib
 
 Python can be installed using [anacoda](https://www.anaconda.com/). For installing OpenCV with GPU support follow the instructions provided in this [video](https://www.youtube.com/watch?v=HsuKxjQhFU0). All other libraries can be installed after this by executing the below code.
+
+```python
+pip install -r requirements.txt
+```
