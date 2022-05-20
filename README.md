@@ -1,4 +1,4 @@
-# Thesis_Akash_2022
+# Computer Vision Based Liquid Contact Angle Estimation from 3D Reconstructed Droplets
 
 ## Table of contents
 [Introduction](#introduction)
