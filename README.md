@@ -14,13 +14,12 @@ This repository includes the code scripts implemnted in the thesis titled ''Comp
 ## Installation <a name="intstallation"></a>
 ### Requirements
 1. python3
-2. opencv-gpu
-3. tensorflow-gpu
-4. numpy
-5. matplotlib
+2. numpy
+3. matplotlib
+4. opencv-gpu
+5. tensorflow-gpu
 
 Python can be installed using [anacoda](https://www.anaconda.com/). For installing OpenCV with GPU support follow the instructions provided in this [video](https://www.youtube.com/watch?v=HsuKxjQhFU0). All other libraries can be installed after this by executing the below code.
-
 ```python
 pip install -r requirements.txt
 ```
