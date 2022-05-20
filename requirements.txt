@@ -6,3 +6,4 @@ albumentations
 segmentation-models
 vtk
 plyfile
+yaml
