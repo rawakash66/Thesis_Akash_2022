@@ -1,0 +1,18 @@
+<!DOCTYPE MeshLabDocument>
+<MeshLabProject>
+ <MeshGroup>
+  <MLMesh label="shape.ply" visible="0" idInFile="-1" filename="../../shape.ply">
+   <MLMatrix44>
+1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 
+</MLMatrix44>
+   <RenderingOption solidColor="192 192 192 255" pointColor="252 233 79 255" wireWidth="1" pointSize="3" wireColor="64 64 64 255" boxColor="234 234 234 255">000111000000000000000100000001001100000010100000000100111011110000001001</RenderingOption>
+  </MLMesh>
+  <MLMesh label="Convex Hull" visible="1" idInFile="-1" filename="0 deg.ply">
+   <MLMatrix44>
+1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 
+</MLMatrix44>
+   <RenderingOption solidColor="192 192 192 255" pointColor="252 233 79 255" wireWidth="1" pointSize="3" wireColor="64 64 64 255" boxColor="234 234 234 255">100001000000000000000100000001011010001010100000000100111011110000001001</RenderingOption>
+  </MLMesh>
+ </MeshGroup>
+ <RasterGroup/>
+</MeshLabProject>
