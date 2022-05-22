@@ -58,3 +58,4 @@ The camera is calibrated using 80 images of asymmetrical circle [pattern](https:
 </p>
 
 ## Silhouette extraction <a name="silhouette"></a>
+The segmentation of droplets in the image is required before starting the reconstruction. An U-Net CNN architecture was used because of its great performance in medical image segmentation. EfficientNetB4 was used as the backbone of the model and the pre-trained weights of imagenet was used in the encoder layer. The [segmentation-model](https://github.com/qubvel/segmentation_models) library was utilized for all the purposes. The dataset included 373 images for training, 40 images for validation and 24 images for testing. The image dataset included a combination of all the specimen used in the experiment along with some unseen examples to generalize the model. 
