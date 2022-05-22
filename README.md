@@ -56,12 +56,10 @@ python PATH_TO_DIR\example.py
 ```
 
 ## Camera calibration <a name="calibration"></a>
-The camera is calibrated using 80 images of asymmetrical circle [pattern](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/pattern%20circles.png). The pattern was printed on a photo paper of size 10 X 7.3 mm. The dataset acquired can be found at this [link](https://github.com/rawakash66/Thesis_Akash_2022/tree/main/camera%20calibration/data). To get the results on calibration parameters, run the script file provided in the [link](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/camera%20calibration/script/calibration.py). The output will be the intrinsic parameters along with plots for reprojection errors and lens distortion as shown below.
-
-<p align = "center">
-  <img src = "https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/reprojection%20error.png" width = "500" />
-  <img src = "https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/lens%20distortion.png" width = "500" />
-</p>
+The camera is calibrated using 80 images of asymmetrical circle [pattern](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/pattern%20circles.png). The pattern was printed on a photo paper of size 10 X 7.3 mm. 
+The dataset acquired can be found at this [link](https://github.com/rawakash66/Thesis_Akash_2022/tree/main/camera%20calibration/data). 
+To get the results on calibration parameters, run the script file provided in the [link](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/camera%20calibration/script/calibration.py). 
+The output will be the intrinsic parameters including focal length, principal point, radial distortion coefficients and tangential distortion coefficients along with plots for [reprojection errors](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/reprojection%20error.png) and [lens distortion](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/lens%20distortion.png).
 
 ## Silhouette extraction <a name="silhouette"></a>
 The segmentation of droplets in the image is required before starting the reconstruction. 
@@ -86,8 +84,5 @@ To use the package restart the conda prompt after running these codes. <br/>
 
 The link to the script for training the model can be found [here](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/silhouette%20extraction/script/segmentation.py).
 The parameters such as 'backbone', 'epoch', 'learning rate', 'batch size', etc. can be changed accordingly to train the model of your choice.
-The output of the script include the plot for learning curve and prediction on top 5 images of validation and test dataset as following.
-
-<p align = "center">
-  <img src = "https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/learning%20curve.png" width = "500" />
-</p>
+The output of the script include the plot for [learning curve](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/learning%20curve.png) and prediction on top 5 images of validation and test dataset as following.
+One of the example prediction on validation data can be found [here](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/DL%20val%20pred%201.png) and prediction on example unseen test data is provided [here](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/DL%20prediction.png). 
