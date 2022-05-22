@@ -3,7 +3,6 @@
 ## Table of contents
 * [Introduction](#introduction)
 * [Installation](#installation)
-* [Setup](#setup)
 * [Camera calibration](#calibration)
 * [Silhouette extraction](#silhouette)
 
@@ -24,13 +23,9 @@ This repository includes the data and code scripts utilized in the thesis titled
 6. segmentation-models
 7. albumentations
 
-Python can be installed using <a href="https://www.anaconda.com/" target="_blank">anacoda</a>. For installing OpenCV with GPU support follow the instructions provided in this <a href="https://www.youtube.com/watch?v=HsuKxjQhFU0" target="_blank">video</a>. All other libraries can be installed after this by executing the below code.
+Python can be installed using <a href="https://www.anaconda.com/" target="_blank">anacoda</a>. For installing OpenCV with GPU support follow the instructions provided in this <a href="https://www.youtube.com/watch?v=HsuKxjQhFU0" target="_blank">video</a>. 
 
-```python
-pip install -U -r requirements.txt
-```
-
-## Setup <a name="setup"></a>
+### Setup
 For using this repository, run the following commands in your conda prompt window. <br/>
 
 1. Install git using conda.
@@ -45,7 +40,11 @@ git clone https://github.com/rawakash66/Thesis_Akash_2022
 ```python
 cd Thesis_Akash_2022
 ```
-4. To run a script named "example.py" use below command and provide path location of the python file relative to the root cloned folder. 
+4. All other libraries mentioned can be installed after this by executing the below code.
+```python
+pip install -U -r requirements.txt
+```
+5. To run a script named "example.py" use below command and provide path location of the python file relative to the root cloned folder. 
 ```python
 python PATH_TO_DIR\example.py
 ```
