@@ -7,3 +7,4 @@ segmentation-models
 vtk
 plyfile
 yaml
+sidecar
