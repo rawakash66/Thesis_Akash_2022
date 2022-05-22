@@ -3,10 +3,12 @@
 ## Table of contents
 * [Introduction](#introduction)
 * [Installation](#installation)
+* [Setup](#setup)
 * [Camera calibration](#calibration)
+* [Silhouette extraction](#silhouette)
 
 ## Introduction <a name="introduction"></a>
-This repository includes the data and code scripts utilized in the thesis titled ''Computer Vision Based Liquid Contact Angle Estimation from 3D Reconstructed Droplets'', submitted at Indian Institute of Technology, Kanpur for the partial fulfilment of the requirements for the degree of Master of Technology. Towards the broad goal of reconstruction of a transparent object, this method presents a novel approach for 3D reconstruction of static liquid droplets on smooth, homogenous surfaces. The following studies were performed. First, a high resolution mobile camera equipped with macro lens is used for image acquisition of small-sized droplet. Next, for estimating intrinsic and extrinsic camera parameters a printed pattern was used. After that, U-Net CNN architecture was used to extract silhouettes of droplets from digital images using semantic segmentation. Finally, shape-from-silhouette method was employed with space carving algorithm to estimate the visual hull containing the droplet volume. The following is the flowdiagram of the methodology.
+This repository includes the data and code scripts utilized in the thesis titled "Computer Vision Based Liquid Contact Angle Estimation from 3D Reconstructed Droplets", submitted at Indian Institute of Technology, Kanpur for the partial fulfilment of the requirements for the degree of Master of Technology. Towards the broad goal of reconstruction of a transparent object, this method presents a novel approach for 3D reconstruction of static liquid droplets on smooth, homogenous surfaces. The following studies were performed. First, a high resolution mobile camera equipped with macro lens is used for image acquisition of small-sized droplet. Next, for estimating intrinsic and extrinsic camera parameters a printed pattern was used. After that, U-Net CNN architecture was used to extract silhouettes of droplets from digital images using semantic segmentation. Finally, shape-from-silhouette method was employed with space carving algorithm to estimate the visual hull containing the droplet volume. The following is the flowdiagram of the methodology.
 
 <p align="center">
   <img src="https://github.com/rawakash66/Thesis_Akash_2022/blob/main/Carving%20methodology.png" width="600">
@@ -28,11 +30,32 @@ Python can be installed using <a href="https://www.anaconda.com/" target="_blank
 pip install -U -r requirements.txt
 ```
 
+## Setup <a name="setup"></a>
+For using this repository, run the following commands in your conda prompt window. <br/>
+
+1. Install git using conda.
+```python
+conda install git
+```
+2. Clone the repository in your system.
+```python
+git clone https://github.com/rawakash66/Thesis_Akash_2022
+```
+3. Move inside the cloned folder.
+```python
+cd Thesis_Akash_2022
+```
+4. To run a script named "example.py" use below command and provide path location of the python file relative to the root cloned folder. 
+```python
+python PATH_TO_DIR\example.py
+```
+
 ## Camera calibration <a name="calibration"></a>
-The camera is calibrated using 80 images of asymmetrical circle [pattern](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/pattern%20circles.png). The pattern was printed on a photo paper of size 10 X 7.3 mm. The dataset acquired can be found at this [link](https://github.com/rawakash66/Thesis_Akash_2022/tree/main/camera%20calibration/data). To get the results on calibration parameters, run the script file provided in the [link](https://github.com/rawakash66/Thesis_Akash_2022/tree/main/camera%20calibration/script). The output will be the intrinsic parameters along with plots for lens distortion and reprojection errors as shown below.
+The camera is calibrated using 80 images of asymmetrical circle [pattern](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/pattern%20circles.png). The pattern was printed on a photo paper of size 10 X 7.3 mm. The dataset acquired can be found at this [link](https://github.com/rawakash66/Thesis_Akash_2022/tree/main/camera%20calibration/data). To get the results on calibration parameters, run the script file provided in the [link](https://github.com/rawakash66/Thesis_Akash_2022/tree/main/camera%20calibration/script). The output will be the intrinsic parameters along with plots for reprojection errors and lens distortion as shown below.
 
 <p align = "center">
-  <img src = "https://github.com/rawakash66/Thesis_Akash_2022/blob/main/circle%20reprojection%20error.png" width = "400" />
-  &nbsp; &nbsp; &nbsp;
-  <img src = "https://github.com/rawakash66/Thesis_Akash_2022/blob/main/lens%20distortion.png" width = "400" />
+  <img src = "https://github.com/rawakash66/Thesis_Akash_2022/blob/main/circle%20reprojection%20error.png" width = "500" />
+  <img src = "https://github.com/rawakash66/Thesis_Akash_2022/blob/main/lens%20distortion.png" width = "500" />
 </p>
+
+## Silhouette extraction <a name="silhouette"></a>
