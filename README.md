@@ -7,7 +7,13 @@
 * [Silhouette extraction](#silhouette)
 
 ## Introduction <a name="introduction"></a>
-This repository includes the data and code scripts utilized in the thesis titled "Computer Vision Based Liquid Contact Angle Estimation from 3D Reconstructed Droplets", submitted at Indian Institute of Technology, Kanpur for the partial fulfilment of the requirements for the degree of Master of Technology. Towards the broad goal of reconstruction of a transparent object, this method presents a novel approach for 3D reconstruction of static liquid droplets on smooth, homogenous surfaces. The following studies were performed. First, a high resolution mobile camera equipped with macro lens is used for image acquisition of small-sized droplet. Next, for estimating intrinsic and extrinsic camera parameters a printed pattern was used. After that, U-Net CNN architecture was used to extract silhouettes of droplets from digital images using semantic segmentation. Finally, shape-from-silhouette method was employed with space carving algorithm to estimate the visual hull containing the droplet volume. The following is the flowdiagram of the methodology.
+This repository includes the data and code scripts utilized in the thesis titled "Computer Vision Based Liquid Contact Angle Estimation from 3D Reconstructed Droplets", submitted at Indian Institute of Technology, Kanpur for the partial fulfilment of the requirements for the degree of Master of Technology. 
+Towards the broad goal of reconstruction of a transparent object, this method presents a novel approach for 3D reconstruction of static liquid droplets on smooth, homogenous surfaces. The following studies were performed. 
+First, a high resolution mobile camera equipped with macro lens is used for image acquisition of small-sized droplet. 
+Next, for estimating intrinsic and extrinsic camera parameters a printed pattern was used. 
+After that, U-Net CNN architecture was used to extract silhouettes of droplets from digital images using semantic segmentation. 
+Finally, shape-from-silhouette method was employed with space carving algorithm to estimate the visual hull containing the droplet volume. 
+The following is the flowdiagram of the methodology.
 
 <p align="center">
   <img src="https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/reconstruction%20methodology.png" width="600">
@@ -58,5 +64,22 @@ The camera is calibrated using 80 images of asymmetrical circle [pattern](https:
 </p>
 
 ## Silhouette extraction <a name="silhouette"></a>
-The segmentation of droplets in the image is required before starting the reconstruction. An [U-Net](https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28) CNN architecture was used because of its great performance in medical image segmentation of irregular-shaped cells. The [EfficientNetB4](https://arxiv.org/abs/1905.11946) was used as the backbone of the model and the pre-trained weights of imagenet was used in the encoder layer. The [segmentation-model](https://github.com/qubvel/segmentation_models) library was utilized for all the purposes. The dataset included 373 images for training, 40 images for validation and 24 images for testing. The image dataset included a combination of all the specimen used in the experiment along with some unseen examples to generalize the model. 
-The dataset can be found at this [link](https://github.com/rawakash66/Thesis_Akash_2022/tree/main/silhouette%20extraction/data/images_and_masks). A helper jupyter notebook is provided to create ground truths for new images in the following [link](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/silhouette%20extraction/notebook/labelling%20notebook.ipynb) and the utility code can be found [here](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/silhouette%20extraction/script/Labelling.py).
+The segmentation of droplets in the image is required before starting the reconstruction. 
+An [U-Net](https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28) CNN architecture was used because of its great performance in medical image segmentation of irregular-shaped cells. 
+The [EfficientNetB4](https://arxiv.org/abs/1905.11946) was used as the backbone of the model and the pre-trained weights of imagenet was used in the encoder layer. 
+The [segmentation-model](https://github.com/qubvel/segmentation_models) library was utilized for all the purposes. The dataset included 373 images for training, 40 images for validation and 24 images for testing. 
+The image dataset included a combination of all the specimen used in the experiment along with some unseen examples to generalize the model. 
+The dataset can be found at this [link](https://github.com/rawakash66/Thesis_Akash_2022/tree/main/silhouette%20extraction/data/images_and_masks). 
+A helper jupyter notebook is provided to create ground truths for new images in the following [link](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/silhouette%20extraction/notebook/labelling%20notebook.ipynb) and the utility code can be found [here](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/silhouette%20extraction/script/Labelling.py).
+To use this jupyter notebook run the following code in conda prompt to use matplotlib widget for interactive plot.
+
+1. Install ipympl for interactive plot.
+```python
+pip install ipympl
+```
+2. Install nodejs and jupyterlab extension to use ipympl in jupyter notebook.
+```python
+conda install -c conda-forge nodejs
+jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-matplotlib
+```
+To use the package restart the conda prompt after running these codes.
