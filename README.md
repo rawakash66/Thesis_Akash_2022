@@ -28,7 +28,6 @@ The following is the flowdiagram of the methodology.
 ### Requirements <a name="requirements"></a>
 1. python3
 2. numpy
-3. scipy
 4. matplotlib
 5. opencv-gpu
 6. tensorflow-gpu
