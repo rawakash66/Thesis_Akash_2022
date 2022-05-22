@@ -21,7 +21,7 @@ This repository includes the data and code scripts utilized in the thesis titled
 6. segmentation-models
 7. albumentations
 
-Python can be installed using [anacoda](https://www.anaconda.com/). For installing OpenCV with GPU support follow the instructions provided in this [video](https://www.youtube.com/watch?v=HsuKxjQhFU0). All other libraries can be installed after this by executing the below code.
+Python can be installed using <a href="https://www.anaconda.com/" target="_blank">anacoda</a>. For installing OpenCV with GPU support follow the instructions provided in this <a href="https://www.youtube.com/watch?v=HsuKxjQhFU0" target="_blank">video</a>. All other libraries can be installed after this by executing the below code.
 
 ```python
 pip install -U -r requirements.txt
