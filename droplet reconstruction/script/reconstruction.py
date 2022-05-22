@@ -305,7 +305,7 @@ def create_voxel(size, scale_factor):
     points[:, 0] *= scale_factor[0]
     points[:, 1] *= scale_factor[1]
     points[:, 2] *= scale_factor[2]
-    points[:, 2] -= 10
+    # points[:, 2] -= 10
     
     # convert to homogenous coordinates
     points = np.vstack((points.T, np.ones((1, n_points))))
