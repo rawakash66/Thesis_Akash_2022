@@ -82,4 +82,12 @@ pip install ipympl
 conda install -c conda-forge nodejs
 jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-matplotlib
 ```
-To use the package restart the conda prompt after running these codes.
+To use the package restart the conda prompt after running these codes. <br/>
+
+The link to the script for training the model can be found [here](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/silhouette%20extraction/script/segmentation.py).
+The parameters such as 'backbone', 'epoch', 'learning rate', 'batch size', etc. can be changed accordingly to train the model of your choice.
+The output of the script include the plot for learning curve and prediction on top 5 images of validation and test dataset as following.
+
+<p align = "center">
+  <img src = "https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/learning%20curve.png" width = "500" />
+</p>
