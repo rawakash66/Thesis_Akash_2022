@@ -33,6 +33,6 @@ The camera is calibrated using 80 images of asymmetrical circle [pattern](https:
 
 <p align = "center">
   <img src = "https://github.com/rawakash66/Thesis_Akash_2022/blob/main/circle%20reprojection%20error.png" width = "400" />
-  &nbsp; &nbsp; &nbsp; &nbsp;
+  &nbsp; &nbsp; &nbsp;
   <img src = "https://github.com/rawakash66/Thesis_Akash_2022/blob/main/lens%20distortion.png" width = "400" />
 </p>
