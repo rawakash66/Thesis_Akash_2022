@@ -7,6 +7,7 @@
   2. [Setup](#setup) 
 * [Camera calibration](#calibration)
 * [Silhouette extraction](#silhouette)
+* [Droplet reconstruction](#reconstruction)
 
 ## Introduction <a name="introduction"></a>
 This repository includes the data and code scripts utilized in the thesis titled "Computer Vision Based Liquid Contact Angle Estimation from 3D Reconstructed Droplets", submitted at Indian Institute of Technology, Kanpur for the partial fulfilment of the requirements for the degree of Master of Technology. 
@@ -62,11 +63,12 @@ The camera is calibrated using 80 images of asymmetrical circle [pattern](https:
 The dataset acquired can be found at this [link](https://github.com/rawakash66/Thesis_Akash_2022/tree/main/camera%20calibration/data). 
 To get the results on calibration parameters, run the script file provided in the [link](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/camera%20calibration/script/calibration.py). 
 The output will be the intrinsic parameters including focal length, principal point, radial distortion coefficients and tangential distortion coefficients along with plots for [reprojection errors](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/reprojection%20error.png) and [lens distortion](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/lens%20distortion.png). 
-A [yml](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/camera%20calibration/data/calibration_circle.yml) file also gets created inside the data folder containing the saved intrinsic camera matrix and distortion coefficients necessary for reconstruction process.
+A yml file also gets created inside the data folder containing the saved intrinsic camera matrix and distortion coefficients necessary for reconstruction process.
+The file can be viewed [here](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/camera%20calibration/data/calibration_circle.yml).
 
 ## Silhouette extraction <a name="silhouette"></a>
 The segmentation of droplets in the image is required before starting the reconstruction. 
-An [U-Net](https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28) CNN architecture was used because of its great performance in medical image segmentation of irregular-shaped cells. 
+An [U-Net](https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28) CNN architecture was used because of its state-of-art performance in medical image segmentation of irregular-shaped cells. 
 The [EfficientNetB4](https://arxiv.org/abs/1905.11946) was used as the backbone of the model and the pre-trained weights of imagenet was used in the encoder layer. 
 The [segmentation-model](https://github.com/qubvel/segmentation_models) library was utilized for all the purposes. The dataset included 373 images for training, 40 images for validation and 24 images for testing. 
 The image dataset included a combination of all the specimen used in the experiment along with some unseen examples to generalize the model. 
@@ -91,3 +93,14 @@ The output of the script include the plot for [learning curve](https://github.co
 One of the example prediction on validation data can be found [here](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/DL%20val%20pred%201.png) and prediction on example unseen test data is provided [here](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/DL%20prediction.png). 
 The script also provides the best model which gets automatically saved [here](https://github.com/rawakash66/Thesis_Akash_2022/tree/main/silhouette%20extraction/script/model).
 It includes training checkpoints and model weights which are necessary for inference during reconstruction process.
+
+## Droplet reconstruction <a name="reconstruction"></a>
+Once the camera calibration and model training is completed, copy and paste the yml file created from calibration step inside the 'droplet reconstruction/data/intrinsic' folder [here](https://github.com/rawakash66/Thesis_Akash_2022/tree/main/droplet%20reconstruction/data/intrinsics).
+Similarly, copy and paste the model folder from reconstruction step inside the 'droplet reconstruction/data/model' folder [here](https://github.com/rawakash66/Thesis_Akash_2022/tree/main/droplet%20reconstruction/data/model).
+The python script to reconstruct the droplet can be found [here](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/droplet%20reconstruction/script/reconstruction.py).
+After completing above steps, just run this python script to get the point cloud representing the droplet structure.
+You can change the thresholding values to tune the shape of the droplet.
+The output of the script includes the 'shape.vtk' and 'shape.ply' file which can be found inside the [mesh](https://github.com/rawakash66/Thesis_Akash_2022/tree/main/droplet%20reconstruction/data/mesh) folder.
+These 'shape.ply' file is imported in the [MeshLab](https://www.meshlab.net/) for visualization and postprocessing.
+The convex hull was used to get the enclosed mesh for the droplet and Z-painting was used to smooth out the surfaces.
+Following is the image of the reconstructed and processed droplet for PLA specimen at 30 degree tilt angle. 
