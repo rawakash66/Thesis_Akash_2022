@@ -3,6 +3,8 @@
 ## Table of contents
 * [Introduction](#introduction)
 * [Installation](#installation)
+  1. [Requirements](#requirements)
+  2. [Setup](#setup) 
 * [Camera calibration](#calibration)
 * [Silhouette extraction](#silhouette)
 
@@ -16,11 +18,11 @@ Finally, shape-from-silhouette method was employed with space carving algorithm 
 The following is the flowdiagram of the methodology.
 
 <p align="center">
-  <img src="https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/reconstruction%20methodology.png" width="600">
+  <img src="https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/reconstruction%20methodology.png" width="800">
 </p>
 
 ## Installation <a name="installation"></a>
-### Requirements
+### Requirements <a name="requirements"></a>
 1. python3
 2. numpy
 3. matplotlib
@@ -31,7 +33,7 @@ The following is the flowdiagram of the methodology.
 
 Python can be installed using <a href="https://www.anaconda.com/" target="_blank">anacoda</a>. For installing OpenCV with GPU support follow the instructions provided in this <a href="https://www.youtube.com/watch?v=HsuKxjQhFU0" target="_blank">video</a>. 
 
-### Setup
+### Setup <a name="setup"></a>
 For using this repository, run the following commands in your conda prompt window. <br/>
 
 1. Install git using conda.
@@ -59,7 +61,8 @@ python PATH_TO_DIR\example.py
 The camera is calibrated using 80 images of asymmetrical circle [pattern](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/pattern%20circles.png). The pattern was printed on a photo paper of size 10 X 7.3 mm. 
 The dataset acquired can be found at this [link](https://github.com/rawakash66/Thesis_Akash_2022/tree/main/camera%20calibration/data). 
 To get the results on calibration parameters, run the script file provided in the [link](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/camera%20calibration/script/calibration.py). 
-The output will be the intrinsic parameters including focal length, principal point, radial distortion coefficients and tangential distortion coefficients along with plots for [reprojection errors](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/reprojection%20error.png) and [lens distortion](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/lens%20distortion.png).
+The output will be the intrinsic parameters including focal length, principal point, radial distortion coefficients and tangential distortion coefficients along with plots for [reprojection errors](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/reprojection%20error.png) and [lens distortion](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/lens%20distortion.png). 
+A [yml](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/camera%20calibration/data/calibration_circle.yml) file also gets created inside the data folder containing the saved intrinsic camera matrix and distortion coefficients necessary for reconstruction process.
 
 ## Silhouette extraction <a name="silhouette"></a>
 The segmentation of droplets in the image is required before starting the reconstruction. 
@@ -86,3 +89,5 @@ The link to the script for training the model can be found [here](https://github
 The parameters such as 'backbone', 'epoch', 'learning rate', 'batch size', etc. can be changed accordingly to train the model of your choice.
 The output of the script include the plot for [learning curve](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/learning%20curve.png) and prediction on top 5 images of validation and test dataset as following.
 One of the example prediction on validation data can be found [here](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/DL%20val%20pred%201.png) and prediction on example unseen test data is provided [here](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/DL%20prediction.png). 
+The script also provides the best model which gets automatically saved [here](https://github.com/rawakash66/Thesis_Akash_2022/tree/main/silhouette%20extraction/script/model).
+It includes training checkpoints and model weights which are necessary for inference during reconstruction process.
