@@ -30,3 +30,9 @@ pip install -U -r requirements.txt
 
 ## Camera calibration <a name="calibration"></a>
 The camera is calibrated using 80 images of asymmetrical circle [pattern](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/pattern%20circles.png). The pattern was printed on a photo paper of size 10 X 7.3 mm. The dataset acquired can be found at this [link](https://github.com/rawakash66/Thesis_Akash_2022/tree/main/camera%20calibration/data). To get the results on calibration parameters, run the script file provided in the [link](https://github.com/rawakash66/Thesis_Akash_2022/tree/main/camera%20calibration/script). The output will be the intrinsic parameters along with plots for lens distortion and reprojection errors as shown below.
+
+<p align = "center">
+  <img src = "https://github.com/rawakash66/Thesis_Akash_2022/blob/main/circle%20reprojection%20error.png" width = "400" />
+  &nbsp; &nbsp; &nbsp; &nbsp;
+  <img src = "https://github.com/rawakash66/Thesis_Akash_2022/blob/main/lens%20distortion.png" width = "400" />
+</p>
