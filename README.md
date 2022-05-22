@@ -28,11 +28,11 @@ The following is the flowdiagram of the methodology.
 ### Requirements <a name="requirements"></a>
 1. python3
 2. numpy
-4. matplotlib
-5. opencv-gpu
-6. tensorflow-gpu
-7. segmentation-models
-8. albumentations
+3. matplotlib
+4. opencv-gpu
+5. tensorflow-gpu
+6. segmentation-models
+7. albumentations
 
 Python can be installed using <a href="https://www.anaconda.com/" target="_blank">anacoda</a>. For installing OpenCV with GPU support follow the instructions provided in this <a href="https://www.youtube.com/watch?v=HsuKxjQhFU0" target="_blank">video</a>. 
 
