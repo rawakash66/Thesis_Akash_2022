@@ -16,7 +16,7 @@ Finally, shape-from-silhouette method was employed with space carving algorithm 
 The following is the flowdiagram of the methodology.
 
 <p align="center">
-  <img src="https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/reconstruction%20methodology.pdf" width="600">
+  <img src="https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/reconstruction%20methodology.png" width="600">
 </p>
 
 ## Installation <a name="installation"></a>
@@ -56,11 +56,11 @@ python PATH_TO_DIR\example.py
 ```
 
 ## Camera calibration <a name="calibration"></a>
-The camera is calibrated using 80 images of asymmetrical circle [pattern](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/pattern%20circles.pdf). The pattern was printed on a photo paper of size 10 X 7.3 mm. The dataset acquired can be found at this [link](https://github.com/rawakash66/Thesis_Akash_2022/tree/main/camera%20calibration/data). To get the results on calibration parameters, run the script file provided in the [link](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/camera%20calibration/script/calibration.py). The output will be the intrinsic parameters along with plots for reprojection errors and lens distortion as shown below.
+The camera is calibrated using 80 images of asymmetrical circle [pattern](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/pattern%20circles.png). The pattern was printed on a photo paper of size 10 X 7.3 mm. The dataset acquired can be found at this [link](https://github.com/rawakash66/Thesis_Akash_2022/tree/main/camera%20calibration/data). To get the results on calibration parameters, run the script file provided in the [link](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/camera%20calibration/script/calibration.py). The output will be the intrinsic parameters along with plots for reprojection errors and lens distortion as shown below.
 
 <p align = "center">
-  <img src = "https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/reprojection%20error.pdf" width = "500" />
-  <img src = "https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/lens%20distortion.pdf" width = "500" />
+  <img src = "https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/reprojection%20error.png" width = "500" />
+  <img src = "https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/lens%20distortion.png" width = "500" />
 </p>
 
 ## Silhouette extraction <a name="silhouette"></a>
