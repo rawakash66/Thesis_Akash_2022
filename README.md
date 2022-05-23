@@ -1,4 +1,4 @@
-# Computer Vision Based Liquid Contact Angle Measurement from 3D Reconstructed Droplets
+# Computer Vision Based Liquid Contact Angle Estimation from 3D Reconstructed Droplets
 
 ## Table of contents
 * [Introduction](#introduction)
