@@ -107,6 +107,10 @@ The 'shape.ply' file is imported in the [MeshLab](https://www.meshlab.net/) for 
 The convex hull was used to get the enclosed mesh for the droplet and Z-painting was used to smooth out the surfaces.
 Following is the image of the reconstructed and processed droplet for PLA specimen at 30 degree tilt angle. 
 
+<p align="center">
+  <img src="https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/reconstructed%20droplet.png" width="800">
+</p>
+
 ## References <a name="references"></a>
 I declare that the code scripts used in this repository is from open source community and I do not claim any copyright on the same.
 Following are the citations to the code scripts.
