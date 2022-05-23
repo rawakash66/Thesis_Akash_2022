@@ -108,7 +108,7 @@ The convex hull was used to get the enclosed mesh for the droplet and Z-painting
 Following is the image of the reconstructed and processed droplet for PLA specimen at 30 degree tilt angle. 
 
 <p align="center">
-  <img src="https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/reconstructed%20droplet.png" width="800">
+  <img src="https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/reconstructed%20droplet.png" width="500">
 </p>
 
 ## References <a name="references"></a>
