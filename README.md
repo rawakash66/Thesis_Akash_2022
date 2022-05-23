@@ -113,7 +113,7 @@ Following is the image of the reconstructed and processed droplet for PLA specim
 
 ## References <a name="references"></a>
 I declare that the code scripts used in this repository is from open source community and I do not claim any copyright on the same.
-Following are the citations to the code scripts.
+Following are the citations to the sources.
 
 * [Camera calibration using circle grid](https://longervision.github.io/2017/03/18/ComputerVision/OpenCV/opencv-internal-calibration-circle-grid/)
 * [Lens distortion plot](http://amroamroamro.github.io/mexopencv/opencv/calibration_demo.html)
