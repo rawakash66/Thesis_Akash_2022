@@ -21,7 +21,7 @@ Finally, shape-from-silhouette method was employed with space carving algorithm 
 The following is the flowdiagram of the methodology.
 
 <p align="center">
-  <img src="https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/reconstruction%20methodology.png" width="800">
+  <img src="https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/methodology.png" width="800">
 </p>
 
 ## Installation <a name="installation"></a>
