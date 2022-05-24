@@ -96,6 +96,7 @@ The output of the script include the plot for [learning curve](https://github.co
 One of the example prediction on validation data can be found [here](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/DL%20val%20pred%201.png) and prediction on unseen test data is provided [here](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/DL%20prediction.png). 
 The script also provides the best model which gets automatically saved [here](https://github.com/rawakash66/Thesis_Akash_2022/tree/main/silhouette%20extraction/script/model).
 It includes training checkpoints and model weights which are necessary for inference during reconstruction process.
+The image of the model architecture used can be found [here](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/unet%20model.png).
 
 ## Droplet reconstruction <a name="reconstruction"></a>
 Once the camera calibration and model training is completed, copy and paste the yml file created from calibration step inside the 'droplet reconstruction/data/intrinsic' folder [here](https://github.com/rawakash66/Thesis_Akash_2022/tree/main/droplet%20reconstruction/data/intrinsics).
