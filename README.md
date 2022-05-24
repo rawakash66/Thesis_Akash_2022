@@ -70,9 +70,9 @@ The file can be viewed [here](https://github.com/rawakash66/Thesis_Akash_2022/bl
 
 ## Silhouette extraction <a name="silhouette"></a>
 The segmentation of droplets in the image is required before starting the reconstruction. 
-An [U-Net](https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28) CNN architecture was used because of its state-of-art performance in medical image segmentation of irregular-shaped cells. 
-The [EfficientNetB4](https://arxiv.org/abs/1905.11946) was used as the backbone of the model and the pre-trained weights of imagenet was used in the encoder layer. 
-The [segmentation-model](https://github.com/qubvel/segmentation_models) library was utilized for all the purposes. The dataset included 373 images for training, 40 images for validation and 24 images for testing. 
+An U-Net CNN architecture was used because of its state-of-art performance in medical image segmentation of irregular-shaped cells. 
+The EfficientNetB4 was used as the backbone of the model and the pre-trained weights of imagenet was used in the encoder layer. 
+The segmentation-model library was utilized for all the purposes. The dataset included 373 images for training, 40 images for validation and 24 images for testing. 
 The image dataset included a combination of all the specimen used in the experiment along with some unseen examples to generalize the model. 
 The dataset can be found at this [link](https://github.com/rawakash66/Thesis_Akash_2022/tree/main/silhouette%20extraction/data/images_and_masks). 
 A helper jupyter notebook is provided to create ground truths for new images in the following [link](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/silhouette%20extraction/notebook/labelling%20notebook.ipynb) and the utility code for the same can be found [here](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/silhouette%20extraction/script/Labelling.py).
@@ -117,8 +117,12 @@ Following is the image of the reconstructed and processed droplet for PLA specim
 I declare that the code scripts used in this repository is from open source community and I do not claim any copyright on the same.
 Following are the citations to the sources.
 
+* [OpenCV](https://opencv.org/)
+* [U-Net](https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28)
+* [EfficientNetB4](https://arxiv.org/abs/1905.11946)
+* [segmentation-model](https://github.com/qubvel/segmentation_models)
 * [Camera calibration using circle grid](https://longervision.github.io/2017/03/18/ComputerVision/OpenCV/opencv-internal-calibration-circle-grid/)
 * [Lens distortion plot](http://amroamroamro.github.io/mexopencv/opencv/calibration_demo.html)
-* [Labelling script](https://github.com/ianhi/AC295-final-project-JWI)
-* [Segmentation script](https://github.com/qubvel/segmentation_models/blob/master/examples/binary%20segmentation%20(camvid).ipynb)
-* [Space carving script](https://github.com/zinsmatt/SpaceCarving/blob/master/space_carving.py)
+* [Labelling](https://github.com/ianhi/AC295-final-project-JWI)
+* [Segmentation](https://github.com/qubvel/segmentation_models/blob/master/examples/binary%20segmentation%20(camvid).ipynb)
+* [Space carving](https://github.com/zinsmatt/SpaceCarving/blob/master/space_carving.py)
