@@ -101,8 +101,8 @@ The image of the model architecture used can be found [here](https://github.com/
 ## Droplet reconstruction <a name="reconstruction"></a>
 Once the camera calibration and model training is completed, copy and paste the yml file created from calibration step inside the 'droplet reconstruction/data/intrinsic' folder [here](https://github.com/rawakash66/Thesis_Akash_2022/tree/main/droplet%20reconstruction/data/intrinsics).
 Similarly, copy and paste the model folder from reconstruction step inside the 'droplet reconstruction/data/model' folder [here](https://github.com/rawakash66/Thesis_Akash_2022/tree/main/droplet%20reconstruction/data/model).
-*If you don't want to train your model, you can download my trained model weights from the link [here](https://drive.google.com/uc?id=1U_Tn5klWV0zW8UWyo0dj-kXuQw9FZ4hX&export=download).
-Extract the zip file inside the data folder of droplet reconstruction files to use the weights.*
+**If you don't want to train your model, you can download my trained model weights from the link [here](https://drive.google.com/uc?id=1U_Tn5klWV0zW8UWyo0dj-kXuQw9FZ4hX&export=download).
+Extract the zip file inside the data folder of droplet reconstruction files to use the weights.**
 The python script to reconstruct the droplet can be found [here](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/droplet%20reconstruction/script/reconstruction.py).
 After completing above steps, run this python script to get the point cloud representing the droplet structure.
 You can change the thresholding values to tune the shape of the droplet.
