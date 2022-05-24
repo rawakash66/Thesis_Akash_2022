@@ -71,7 +71,7 @@ The file can be viewed [here](https://github.com/rawakash66/Thesis_Akash_2022/bl
 ## Silhouette extraction <a name="silhouette"></a>
 The segmentation of droplets in the image is required before starting the reconstruction. 
 An U-Net CNN architecture was used because of its state-of-art performance in medical image segmentation of irregular-shaped cells. 
-The EfficientNetB4 was used as the backbone of the model and the pre-trained weights of imagenet was used in the encoder layer. 
+The EfficientNet-B4 was used as the backbone of the model and the pre-trained weights of imagenet was used in the encoder layer. 
 The segmentation-model library was utilized for all the purposes. The dataset included 373 images for training, 40 images for validation and 24 images for testing. 
 The image dataset included a combination of all the specimen used in the experiment along with some unseen examples to generalize the model. 
 The dataset can be found at this [link](https://github.com/rawakash66/Thesis_Akash_2022/tree/main/silhouette%20extraction/data/images_and_masks). 
@@ -122,7 +122,7 @@ Following are the citations to the sources.
 * [OpenCV](https://opencv.org/)
 * [MeshLab](https://www.meshlab.net/)
 * [U-Net](https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28)
-* [EfficientNetB4](https://arxiv.org/abs/1905.11946)
+* [EfficientNets](https://arxiv.org/abs/1905.11946)
 * [segmentation-model](https://github.com/qubvel/segmentation_models)
 * [Camera calibration using circle grid](https://longervision.github.io/2017/03/18/ComputerVision/OpenCV/opencv-internal-calibration-circle-grid/)
 * [Lens distortion plot](http://amroamroamro.github.io/mexopencv/opencv/calibration_demo.html)
