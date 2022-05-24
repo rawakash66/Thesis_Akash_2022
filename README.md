@@ -107,7 +107,7 @@ The python script to reconstruct the droplet can be found [here](https://github.
 After completing above steps, run this python script to get the point cloud representing the droplet structure.
 You can change the thresholding values to tune the shape of the droplet.
 The output of the script includes the 'shape.vtk' and 'shape.ply' file which can be found inside the [mesh](https://github.com/rawakash66/Thesis_Akash_2022/tree/main/droplet%20reconstruction/data/mesh) folder.
-The 'shape.ply' file is imported in the [MeshLab](https://www.meshlab.net/) for visualization and postprocessing.
+The 'shape.ply' file is imported in the MeshLab for visualization and postprocessing.
 The convex hull was used to get the enclosed mesh for the droplet and Z-painting was used to smooth out the surfaces.
 Following is the image of the reconstructed and processed droplet for PLA specimen at 30 degree tilt angle. 
 
@@ -120,6 +120,7 @@ I declare that the code scripts used in this repository is from open source comm
 Following are the citations to the sources.
 
 * [OpenCV](https://opencv.org/)
+* [MeshLab](https://www.meshlab.net/)
 * [U-Net](https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28)
 * [EfficientNetB4](https://arxiv.org/abs/1905.11946)
 * [segmentation-model](https://github.com/qubvel/segmentation_models)
