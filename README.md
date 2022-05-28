@@ -115,6 +115,8 @@ Following is the image of the reconstructed and processed droplet for PLA specim
   <img src="https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/reconstructed%20droplet.png" width="500">
 </p>
 
+A numerical-based approach was also used to reconstruct the droplet. The MATLAB file for the same can be found [here](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/droplet%20reconstruction/script/numerical_reconstruction.m).
+
 ## References <a name="references"></a>
 I declare that the code scripts used in this repository is from open source community and I do not claim any copyright on the same.
 Following are the citations to the sources.
