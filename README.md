@@ -19,7 +19,6 @@ First, a high resolution mobile camera equipped with macro lens is used for imag
 Next, for estimating intrinsic and extrinsic camera parameters a printed pattern was used. 
 After that, U-Net CNN architecture was used to extract silhouettes of droplets from digital images using semantic segmentation. 
 Finally, shape-from-silhouette method was employed with space carving algorithm to estimate the visual hull containing the droplet volume.
--->
 
 <p align="center">
   <img src="https://github.com/rawakash66/Thesis_Akash_2022/blob/main/figures/methodology.png" width="800">
@@ -121,6 +120,8 @@ A numerical-based approach was also used to reconstruct the droplet. The MATLAB 
 ## References <a name="references"></a>
 I declare that the code scripts used in this repository is from open source community and I do not claim any copyright on the same.
 Following are the citations to the sources.
+-->
+
 
 * [OpenCV](https://opencv.org/)
 * [MeshLab](https://www.meshlab.net/)
