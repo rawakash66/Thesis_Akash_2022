@@ -1,3 +1,4 @@
+<!---
 # Computer Vision Based Liquid Contact Angle Estimation from 3D Reconstructed Droplets
 
 ## Table of contents
@@ -12,7 +13,6 @@
 
 ## Introduction <a name="introduction"></a>
 This repository includes the data and code scripts utilized in the thesis titled "Computer Vision Based Liquid Contact Angle Estimation from 3D Reconstructed Droplets", submitted at Indian Institute of Technology, Kanpur for the partial fulfilment of the requirements for the degree of Master of Technology. The following is the flowdiagram of the methodology.
-<!---
 Towards the broad goal of reconstruction of a transparent object, this method presents a novel approach for 3D reconstruction of static liquid droplets on smooth, homogenous surfaces. 
 The following studies were performed. 
 First, a high resolution mobile camera equipped with macro lens is used for image acquisition of small-sized droplet. 
@@ -116,14 +116,14 @@ Following is the image of the reconstructed and processed droplet for PLA specim
 </p>
 
 A numerical-based approach was also used to reconstruct the droplet. The MATLAB file for the same can be found [here](https://github.com/rawakash66/Thesis_Akash_2022/blob/main/droplet%20reconstruction/script/numerical_reconstruction.m).
+-->
 
 ## References <a name="references"></a>
 I declare that the code scripts used in this repository is from open source community and I do not claim any copyright on the same.
 Following are the citations to the sources.
--->
 
 
-* [OpenCV](https://opencv.org/)
+* [Anaconda](https://anaconda.org/)
 * [MeshLab](https://www.meshlab.net/)
 * [U-Net](https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28)
 * [EfficientNets](https://arxiv.org/abs/1905.11946)
