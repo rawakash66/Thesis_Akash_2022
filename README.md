@@ -38,19 +38,15 @@ Python can be installed using <a href="https://www.anaconda.com/" target="_blank
 ### Setup <a name="setup"></a>
 For using this repository, run the following commands in your conda prompt window. <br/>
 
-1. Install git using conda.
-```python
-conda install git
-```
-2. Clone the repository in your system.
+1. Clone the repository in your system.
 ```python
 git clone https://github.com/rawakash66/transparent-drop-reconstruction
 ```
-3. Move inside the cloned folder.
+2. Move inside the cloned folder.
 ```python
 cd transparent-drop-reconstruction
 ```
-4. All other libraries mentioned can be installed after this by executing the below code.
+3. All other libraries mentioned can be installed after this by executing the below code.
 ```python
 pip install -U -r requirements.txt
 ```
