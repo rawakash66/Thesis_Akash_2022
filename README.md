@@ -11,13 +11,7 @@
 * [References](#references)
 
 ## Introduction <a name="introduction"></a>
-This repository includes the data and code scripts utilized in the thesis titled "Computer vision-based estimation of angles from 3D reconstruction", submitted at Indian Institute of Technology, Kanpur for the partial fulfilment of the requirements for the degree of Master of Technology. The following is the flowdiagram of the methodology.
-Towards the broad goal of reconstruction of a transparent object, this method presents a novel approach for 3D reconstruction of static liquid droplets on smooth, homogenous surfaces. 
-The following studies were performed. 
-First, a high resolution mobile camera equipped with macro lens is used for image acquisition of small-sized droplet. 
-Next, for estimating intrinsic and extrinsic camera parameters a printed pattern was used. 
-After that, U-Net CNN architecture was used to extract silhouettes of droplets from digital images using semantic segmentation. 
-Finally, shape-from-silhouette method was employed with space carving algorithm to estimate the visual hull containing the droplet volume.
+Current methods to measure the contact angle require orthogonal imaging of the droplet and substrate. We have developed a novel computer vision-based technique to reconstruct the surface of the 3D transparent microdroplet from non-orthogonal images and determined  the contact angle using custom-made equipment comprising a smartphone camera and macro lens. After estimating the  intrinsic and extrinsic camera parameters using a printed pattern, the EfficientNet-B4 model of U-Net CNN architecture was used to extract silhouettes of droplets from images using semantic segmentation. Finally, the shape-from-silhouette method was employed involving a space carving algorithm to estimate the visual hull containing the droplet volume. Comparison with measurements from a state-of-the-art goniometer of static and dynamic contact angles on various substrates using a standard goniometer revealed an average error of 4%.  Our method, using non-orthogonal images, was found to be successful for the on-site measurement of static and dynamic contact angles, as well as 3D reconstruction of the transparent droplets.
 
 <p align="center">
   <img src="https://github.com/rawakash66/transparent-drop-reconstruction/blob/main/figures/methodology.png" width="800">
